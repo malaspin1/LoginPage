@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(227, 230, 231);
+}
+
+
+#container {
+  width: 900px;
+  height: 900px;
+  position: relative;
+  top: 50vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+}
+#boasvindas {
+  position: absolute;
+}
+
+#createaccont {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  left: 50%;
+  width: 450px;
+  height: 900px;
+  background-color: white;
+  padding: 30px;
+  padding-top: 100px;
+}
+#createaccont > h2 {
+  text-align: center;
+  color: #1f82bf;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+#createaccont > h3 {
+  color: #035AA6;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+#createaccont > input {
+  box-sizing: border-box;
+  border: none;
+  padding: 10px;
+  border-left: 4px solid #0467be;
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+#createaccont > input:focus {
+  outline: none;
+}
+
+#createaccont > button {
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  background-color: #1F82BF;
+  width: 80%;
+  color: white;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+#createaccont > button:hover {
+  cursor: pointer;
+}
+
+#createaccont > input.erro {
+  border-left: 4px solid rgb(175, 47, 47);
+}
+
+#jaconta{
+  margin-top: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#novamente {
+  position: absolute;
+  left: 50%;
+}
+
+#entrar {
+  display: none;
+}
+
+#cont {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#login {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  width: 450px;
+  height: 900px;
+  background-color: white;
+  padding: 30px;
+  padding-top: 100px;
+}
+#login > #cont > h2 {
+  text-align: center;
+  color: #1f82bf;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+#login > #cont > h3 {
+  color: #035AA6;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+#login > #cont > input {
+  box-sizing: border-box;
+  border: none;
+  padding: 10px;
+  border-left: 4px solid #0467be;
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+#login > #cont > input:focus {
+  outline: none;
+}
+
+#login > #cont > button {
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  background-color: #1F82BF;
+  width: 80%;
+  color: white;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+#login > #cont > button:hover {
+  cursor: pointer;
+}
+
+#login > #cont > input.erro {
+  border-left: 4px solid rgb(175, 47, 47);
+}

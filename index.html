@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="criar">
+        <img id="boasvindas" src="img/bv.png" alt="Bem Vindo" />
+        <form id="createaccont" action="createaccont()">
+          <h2>Crie sua Conta</h2>
+          <h3>Email</h3>
+          <input
+            type="email"
+            id="email"
+            required
+            pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+            placeholder="email@exemplo.com"
+          />
+          <h3>Nome</h3>
+          <input required id="nome" placeholder="Insira seu Nome!" />
+          <h3>Nome de Usuario</h3>
+          <input
+            required
+            id="username"
+            placeholder="Insira seu Nome de Usuario!"
+          />
+          <h3>Senha</h3>
+          <input
+            type="password"
+            required
+            id="senha"
+            placeholder="Insira sua Senha!"
+          />
+          <h3>Confirme sua Senha</h3>
+          <input
+            type="password"
+            required
+            id="senha2"
+            placeholder="Insira sua Senha novamente!"
+          />
+          <button type="submit" id="criar" onclick="createaccont()">
+            Criar Conta
+          </button>
+          <p id="jaconta" onclick="japossui()">Ja possui uma conta?</p>
+        </form>
+      </div>
+
+      <div id="entrar">       
+          <img id="novamente" src="img/bvvolta.png" alt="Bem Vindo de volta" />
+          <form id="login" action="createaccont()">
+             <div id="cont">
+            <h2>Entre na sua conta</h2>
+            <h3>Email ou Nome de Usuario</h3>
+            <input
+              type="email"
+              id="emaill"
+              required
+              pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+              placeholder="Insira seu email ou nome de Usuario"
+            />
+            <h3>Senha</h3>
+            <input
+              type="password"
+              required
+              id="senhal"
+              placeholder="Insira sua Senha!"
+            />
+            <button type="submit" onclick="login()">Entrar</button>
+            <p id="jaconta" onclick="naopossui()">Ainda não possui uma conta?</p>
+          </div>
+          </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
