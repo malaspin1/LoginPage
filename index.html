@@ -49,10 +49,10 @@
         </form>
       </div>
 
-      <div id="entrar">       
-          <img id="novamente" src="img/bvvolta.png" alt="Bem Vindo de volta" />
-          <form id="login" action="createaccont()">
-             <div id="cont">
+      <div id="entrar">
+        <img id="novamente" src="img/bvvolta.png" alt="Bem Vindo de volta" />
+        <form id="login" action="createaccont()">
+          <div id="cont">
             <h2>Entre na sua conta</h2>
             <h3>Email ou Nome de Usuario</h3>
             <input
@@ -70,11 +70,18 @@
               placeholder="Insira sua Senha!"
             />
             <button type="submit" onclick="login()">Entrar</button>
-            <p id="jaconta" onclick="naopossui()">Ainda não possui uma conta?</p>
+            <p id="jaconta" onclick="naopossui()">
+              Ainda não possui uma conta?
+            </p>
           </div>
-          </form>
-        </div>
+        </form>
+      </div>
     </div>
+    <button id="mostrarContas" onclick="mostrarContas()">contas</button>
+
+    <div id="listaContas" style="display: none"></div>
+    <button id="limparContas" style="display:none;" onclick="limparContas()">Limpar todas as contas</button>
+
     <script src="script.js"></script>
   </body>
 </html>
