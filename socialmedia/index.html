@@ -1,27 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tech Media</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header id="topo">
-        <a href="../index.html">Sair da Conta</a>
+      <a href="../index.html">Sair da Conta</a>
     </header>
     <main id="maincontent">
-        <div class="post">
-            <div class="userarea">
-                <img class="postphoto" src="img/photo_arthur.webp">
-                <h5 class="username">Arthur Morgan</h5>
-            </div>
-            <p class="postcontent">I was at blackwater, doing nothing, but a lot of pinkertons showed up, and i had to kill then.</p>
-            <div id="post-interaction">
-                <img class="like" src="img/like.png">
-                <img class="deslike" src="img/deslike.png"
-            </div>
+      <div class="post" id="arthur">
+        <div class="userarea">
+          <img class="postphoto" src="img/photo_arthur.jpg" />
+          <h5 class="username">Arthur Morgan</h5>
         </div>
+        <p class="postcontent">
+          Tava em blackwater, tinha ido só comprar comida pro meu cavalo, chegou
+          logo um tanto de pinkerton, ai eu me defendi, e agora o Cherife de la
+          ta na minha cola.
+        </p>
+        <div class="post-interaction">
+          <img
+            class="like invert"
+            src="img/like.png"
+            onclick="like('arthur')"
+          />
+          <img
+            class="deslike invert"
+            src="img/deslike.png"
+            onclick="deslike('arthur')"
+          />
+        </div>
+      </div>
+      <div class="post" id="kratos">
+        <div class="userarea">
+          <img class="postphoto" src="img/Kratos.jpg" />
+          <h5 class="username">Kratos</h5>
+        </div>
+        <p class="postcontent">
+          Acordei cedo.<br />
+          Treinei. Mantive a mente afiada.<br />
+          O passado não muda, mas o dia de hoje depende das escolhas.<br />
+          Menos raiva, Mais foco.<br />
+          Sigo em frente como sempre. <br />
+          #Guerra #Disciplina #Força #DeusDaGuerra #NãoOlheParaTrás
+        </p>
+        <div class="post-interaction">
+          <img
+            class="like invert"
+            src="img/like.png"
+            onclick="like('kratos')"
+          />
+          <img
+            class="deslike invert"
+            src="img/deslike.png"
+            onclick="deslike('kratos')"
+          />
+        </div>
+      </div>
+      <div class="post" id="laracroft">
+        <div class="userarea">
+          <img class="postphoto" src="img/laracroft.jpg" />
+          <h5 class="username">Lara Croft</h5>
+        </div>
+        <p class="postcontent">
+          Acordei com o sol, mochila pronta e poeira nas botas.<br />
+          Mais uma ruína, mais perguntas sem resposta — é isso que me move.<br />
+          Nem todo caminho é seguro, mas ficar parada nunca foi uma opção.<br />
+          Explorar. Aprender. Seguir em frente.
+        </p>
+        <div class="post-interaction">
+          <img
+            class="like invert"
+            src="img/like.png"
+            onclick="like('laracroft')"
+          />
+          <img
+            class="deslike invert"
+            src="img/deslike.png"
+            onclick="deslike('laracroft')"
+          />
+        </div>
+      </div>
+      <div class="post" id="laracroft">
+        <div class="userarea">
+          <img class="postphoto" src="img/leon.jpg" />
+          <h5 class="username">Leon S. Knnedy</h5>
+        </div>
+        <p class="postcontent">
+          Sonhei com eles de novo.<br />
+          Olhos vazios, passos lentos, gritos que não param.<br />
+          Acordei achando que ainda estavam no quarto.<br />
+          Demorei pra lembrar que foi só um pesadelo… pelomenos eu acho.<br />
+        </p>
+        <div class="post-interaction">
+          <img
+            class="like invert"
+            src="img/like.png"
+            onclick="like('laracroft')"
+          />
+          <img
+            class="deslike invert"
+            src="img/deslike.png"
+            onclick="deslike('laracroft')"
+          />
+        </div>
+      </div>
     </main>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

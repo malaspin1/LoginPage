@@ -38,6 +38,7 @@ body {
     padding: 10px;
     border-radius: 20px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.137);
+    margin-top: 20px;
 }
 
 .userarea {
@@ -48,6 +49,7 @@ body {
 
 .postphoto {
     width: 40px;
+    height: 40px;
     border-radius: 50%;
     border: 1px solid black;
     display: inline-block;
@@ -59,4 +61,12 @@ body {
 
 .postcontent {
     margin: 10px;
+}
+
+.invert {
+    filter: invert();
+}
+
+.like:hover, .deslike:hover {
+    cursor: pointer;
 }
